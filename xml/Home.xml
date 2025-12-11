@@ -1071,7 +1071,8 @@
 					</include>
 					<include content="IconButton">
 						<param name="control_id" value="801" />
-						<param name="onclick" value="ActivateWindow(1107)" />
+						<!-- <param name="onclick" value="ActivateWindow(1111)" /> -->
+						<param name="onclick" value="RunScript(special://home/addons/plugin.video.filteredmovies/default.py, 0, ?mode=launch_t9)" />
 						<param name="icon" value="icons/search.png" />
 						<param name="label" value="$LOCALIZE[137]" />
 					</include>
