@@ -15,7 +15,7 @@
 		<definition>
 			<control type="label" id="$PARAM[list_id]666">
 				<left>55</left>
-				<top>80</top>
+				<top>100</top>
 				<width>900</width>
 				<height>90</height>
 				<label>$PARAM[label]</label>
