@@ -1,4 +1,4 @@
-﻿<window id="1111">
+<window id="1111">
     <defaultcontrol>1011</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
 
@@ -220,6 +220,22 @@
                     <textoffsetx>5</textoffsetx>
                     <align>left</align>
                     <onclick>Skin.SetString(filter.sort,dateadded)</onclick>
+                    <onclick>SetProperty(reload_id,$INFO[Skin.String(filter.sort)]$INFO[Skin.String(filter.mediatype)]$INFO[Skin.String(filter.genre)]$INFO[Skin.String(filter.country)]$INFO[Skin.String(filter.letter)]$INFO[Skin.String(filter.year)]$INFO[System.Time],1111)</onclick>
+                </control>
+
+                <!-- 观看中 (LastPlayed) -->
+                <control type="button" id="1015">
+                    <width>120</width>
+                    <height>40</height>
+                    <label>观看中</label>
+                    <font>font13</font>
+                    <textcolor>$VAR[FilterSortColor_LastPlayed]</textcolor>
+                    <focusedcolor>FF19B5FE</focusedcolor>
+                    <texturefocus></texturefocus>
+                    <texturenofocus></texturenofocus>
+                    <textoffsetx>5</textoffsetx>
+                    <align>left</align>
+                    <onclick>Skin.SetString(filter.sort,lastplayed)</onclick>
                     <onclick>SetProperty(reload_id,$INFO[Skin.String(filter.sort)]$INFO[Skin.String(filter.mediatype)]$INFO[Skin.String(filter.genre)]$INFO[Skin.String(filter.country)]$INFO[Skin.String(filter.letter)]$INFO[Skin.String(filter.year)]$INFO[System.Time],1111)</onclick>
                 </control>
 
@@ -1202,6 +1218,18 @@
                         <bordersize>20</bordersize>
                     </control>
 
+                    <!-- 观看进度条 -->
+                    <control type="progress">
+                        <left>30</left>
+                        <top>390</top>
+                        <width>250</width>
+                        <height>5</height>
+                        <info>ListItem.Property(SkinPercentPlayed)</info>
+                        <texturebg colordiffuse="20FFFFFF">colors/white.png</texturebg>
+                        <midtexture colordiffuse="button_focus">colors/white.png</midtexture>
+                        <visible>Integer.IsGreater(ListItem.Property(SkinPercentPlayed),0)</visible>
+                    </control>
+
                     <control type="image">
                         <left>30</left>
                         <top>20</top>
@@ -1323,6 +1351,18 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="21" infill="false">overlays/shadow.png</bordertexture>
                         <bordersize>20</bordersize>
+                    </control>
+
+                    <!-- 观看进度条 -->
+                    <control type="progress">
+                        <left>30</left>
+                        <top>390</top>
+                        <width>250</width>
+                        <height>5</height>
+                        <info>ListItem.Property(SkinPercentPlayed)</info>
+                        <texturebg colordiffuse="20FFFFFF">colors/white.png</texturebg>
+                        <midtexture colordiffuse="button_focus">colors/white.png</midtexture>
+                        <visible>Integer.IsGreater(ListItem.Property(SkinPercentPlayed),0)</visible>
                     </control>
 
                     <control type="image">

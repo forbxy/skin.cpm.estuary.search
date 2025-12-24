@@ -816,20 +816,20 @@
 		<value condition="String.IsEqual(Player.Process(video.source.dovi.el.type),none)"></value>
 	</variable>
 	<variable name="RPUPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.rpu.present),1)">[COLOR lightgreen]■[/COLOR]</value>
-		<value>[COLOR dimgrey]■[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.rpu.present),1)">[COLOR lightgreen]鈻燵/COLOR]</value>
+		<value>[COLOR dimgrey]鈻燵/COLOR]</value>
 	</variable>
 	<variable name="BLPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.bl.present),1)">[COLOR lightgreen]■[/COLOR]</value>
-		<value>[COLOR dimgrey]■[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.bl.present),1)">[COLOR lightgreen]鈻燵/COLOR]</value>
+		<value>[COLOR dimgrey]鈻燵/COLOR]</value>
 	</variable>
 	<variable name="ELPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.el.present),1)">[COLOR lightgreen]■[/COLOR]</value>
-		<value>[COLOR dimgrey]■[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.el.present),1)">[COLOR lightgreen]鈻燵/COLOR]</value>
+		<value>[COLOR dimgrey]鈻燵/COLOR]</value>
 	</variable>
 	<variable name="ELSourcePresentVar">
-		<value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR 8016a34a]■[/COLOR]</value>
-		<value>[COLOR dimgrey]■[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR 8016a34a]鈻燵/COLOR]</value>
+		<value>[COLOR dimgrey]鈻燵/COLOR]</value>
 	</variable>
 	<variable name="DVProfileExtVar">
 		<value>$INFO[Player.Process(video.dovi.profile)].$INFO[Player.Process(video.dovi.bl.signal.compatibility)]</value>
@@ -983,6 +983,10 @@
         <value condition="String.IsEqual(Skin.String(filter.sort),dateadded)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
+    <variable name="FilterSortColor_LastPlayed">
+        <value condition="String.IsEqual(Skin.String(filter.sort),lastplayed)">FFEB9E17</value>
+        <value>FFFFFFFF</value>
+    </variable>
     <variable name="FilterSortColor_Random">
         <value condition="String.IsEqual(Skin.String(filter.sort),random)">FFEB9E17</value>
         <value>FFFFFFFF</value>
@@ -1018,55 +1022,55 @@
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Action">
-        <value condition="String.IsEqual(Skin.String(filter.genre),动作)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鍔ㄤ綔)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Comedy">
-        <value condition="String.IsEqual(Skin.String(filter.genre),喜剧)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鍠滃墽)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Romance">
-        <value condition="String.IsEqual(Skin.String(filter.genre),爱情)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鐖辨儏)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_SciFi">
-        <value condition="String.IsEqual(Skin.String(filter.genre),科幻)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),绉戝够)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Crime">
-        <value condition="String.IsEqual(Skin.String(filter.genre),犯罪)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鐘姜)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Adventure">
-        <value condition="String.IsEqual(Skin.String(filter.genre),冒险)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鍐掗櫓)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Horror">
-        <value condition="String.IsEqual(Skin.String(filter.genre),恐怖)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鎭愭€?">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Animation">
-        <value condition="String.IsEqual(Skin.String(filter.genre),动画)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鍔ㄧ敾)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_War">
-        <value condition="String.IsEqual(Skin.String(filter.genre),战争)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鎴樹簤)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Mystery">
-        <value condition="String.IsEqual(Skin.String(filter.genre),悬疑)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鎮枒)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_History">
-        <value condition="String.IsEqual(Skin.String(filter.genre),历史)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),鍘嗗彶)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Music">
-        <value condition="String.IsEqual(Skin.String(filter.genre),音乐)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),闊充箰)">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Documentary">
-        <value condition="String.IsEqual(Skin.String(filter.genre),纪录片)">FFEB9E17</value>
+        <value condition="String.IsEqual(Skin.String(filter.genre),绾綍鐗?">FFEB9E17</value>
         <value>FFFFFFFF</value>
     </variable>
     <variable name="FilterGenreColor_Other">
@@ -1139,5 +1143,9 @@
     <variable name="FilterRatingColor_Below_6">
         <value condition="Skin.HasSetting(filter.rating.below_6)">FFEB9E17</value>
         <value>FFFFFFFF</value>
+    </variable>
+    <variable name="Var_PercentPlayed">
+        <value condition="!String.IsEmpty(ListItem.Property(SkinPercentPlayed))">$INFO[ListItem.Property(SkinPercentPlayed)]</value>
+        <value>$INFO[ListItem.PercentPlayed]</value>
     </variable>
 </includes>
