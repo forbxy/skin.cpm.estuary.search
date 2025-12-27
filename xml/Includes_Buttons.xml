@@ -29,12 +29,12 @@
 				<textureradiooffdisabled colordiffuse="disabled">$PARAM[texture]</textureradiooffdisabled>
 				<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
 				<texturenofocus/>
-				<width>44</width>
-				<height>44</height>
-				<radiowidth>44</radiowidth>
-				<radioheight>44</radioheight>
-				<radioposx>1</radioposx>
-				<radioposy>0</radioposy>
+				<width>76</width>
+				<height>76</height>
+				<radiowidth>50</radiowidth>
+				<radioheight>50</radioheight>
+				<radioposx>13</radioposx>
+				<radioposy>13</radioposy>
 				<onclick>$PARAM[onclick]</onclick>
 				<selected>$PARAM[selected]</selected>
 				<visible>Player.Process(videohwdecoder)</visible>
@@ -95,7 +95,7 @@
 			<invalidcolor>invalid</invalidcolor>
 			<selectedcolor>selected</selectedcolor>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
-			<texturenofocus colordiffuse="dialog_tint">colors/white.png</texturenofocus>
+			<texturenofocus colordiffuse="35FFFFFF">colors/black.png</texturenofocus>
 		</definition>
 	</include>
 	<include name="DefaultSettingLabel">
