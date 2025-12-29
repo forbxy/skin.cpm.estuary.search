@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	<depth>DepthOSD</depth>
 	<controls>
+
 		<control type="button">
 			<description>background close area</description>
 			<left>0</left>
@@ -254,11 +255,48 @@
 						<visible>VideoPlayer.HasTeletext</visible>
 					</control>
 					<control type="radiobutton" id="70046">
-						<include content="OSDButton">
-							<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
-						</include>
+						<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/settings-subtitle.png</textureradioonfocus>
+						<textureradioonnofocus>osd/fullscreen/buttons/settings-subtitle.png</textureradioonnofocus>
+						<textureradioofffocus colordiffuse="white">osd/fullscreen/buttons/settings-subtitle.png</textureradioofffocus>
+						<textureradiooffnofocus>osd/fullscreen/buttons/settings-subtitle.png</textureradiooffnofocus>
+						<textureradioondisabled colordiffuse="disabled">osd/fullscreen/buttons/settings-subtitle.png</textureradioondisabled>
+						<textureradiooffdisabled colordiffuse="disabled">osd/fullscreen/buttons/settings-subtitle.png</textureradiooffdisabled>
+						<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
+						<width>76</width>
+						<height>76</height>
+						<radiowidth>74</radiowidth>
+						<radioheight>74</radioheight>
+						<font></font>
+						<texturenofocus />
+						<radioposx>1</radioposx>
+						<radioposy>0</radioposy>
 						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+						<onfocus>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=populate_subtitle_list)</onfocus>
+						<onup>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=open_osd_subtitle_list)</onup>
+						<ondown>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=open_osd_subtitle_list)</ondown>
 						<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasSubtitles</visible>
+					</control>
+					<control type="radiobutton" id="70049">
+						<textureradioonfocus colordiffuse="white">DefaultAddonLyrics.png</textureradioonfocus>
+						<textureradioonnofocus>DefaultAddonLyrics.png</textureradioonnofocus>
+						<textureradioofffocus colordiffuse="white">DefaultAddonLyrics.png</textureradioofffocus>
+						<textureradiooffnofocus>DefaultAddonLyrics.png</textureradiooffnofocus>
+						<textureradioondisabled colordiffuse="disabled">DefaultAddonLyrics.png</textureradioondisabled>
+						<textureradiooffdisabled colordiffuse="disabled">DefaultAddonLyrics.png</textureradiooffdisabled>
+						<texturefocus colordiffuse="button_focus">osd/fullscreen/buttons/button-fo.png</texturefocus>
+						<width>76</width>
+						<height>76</height>
+						<radiowidth>74</radiowidth>
+						<radioheight>74</radioheight>
+						<font></font>
+						<texturenofocus />
+						<radioposx>1</radioposx>
+						<radioposy>0</radioposy>
+						<onclick>ActivateWindow(osdaudiosettings)</onclick>
+						<onfocus>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=populate_audio_list)</onfocus>
+						<onup>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=open_osd_audio_list)</onup>
+						<ondown>RunScript(special://home/addons/plugin.video.filteredmovies/default.py, ?mode=open_osd_audio_list)</ondown>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
 					</control>
 					<control type="radiobutton" id="70047">
 						<include content="OSDButton">
@@ -360,6 +398,186 @@
 					<action>pvr.seek</action>
 					<visible>Control.HasFocus(87) + VideoPlayer.Content(LiveTV)</visible>
 				</control>
+			</control>
+		</control>
+		<control type="group">
+			<right>0</right>
+			<bottom>130</bottom>
+			<width>390</width>
+			<height>320</height>
+			<visible>Control.HasFocus(70046) + !String.IsEqual(Window(10000).Property(OSDSubtitleListOpen),true)</visible>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			
+			<!-- Background -->
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture colordiffuse="80000000">colors/white.png</texture>
+			</control>
+			
+			<!-- Title -->
+			<control type="label">
+				<left>20</left>
+				<top>10</top>
+				<width>350</width>
+				<height>40</height>
+				<label>字幕</label>
+				<font>font12_title</font>
+				<textcolor>grey</textcolor>
+				<align>center</align>
+			</control>
+
+			<!-- List -->
+			<control type="list" id="80000">
+				<left>10</left>
+				<top>60</top>
+				<width>370</width>
+				<height>250</height>
+				<onup>70046</onup>
+				<ondown>70046</ondown>
+				<onleft>70046</onleft>
+				<onright>70046</onright>
+				<viewtype label="list">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="50">
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>350</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>!String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>350</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FFEB9E17</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50">
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>350</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>!String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>350</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FFEB9E17</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+		<control type="group">
+			<right>0</right>
+			<bottom>130</bottom>
+			<width>780</width>
+			<height>320</height>
+			<visible>Control.HasFocus(70049) + !String.IsEqual(Window(10000).Property(OSDAudioListOpen),true)</visible>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			
+			<!-- Background -->
+			<control type="image">
+				<width>100%</width>
+				<height>100%</height>
+				<texture colordiffuse="80000000">colors/white.png</texture>
+			</control>
+			
+			<!-- Title -->
+			<control type="label">
+				<left>20</left>
+				<top>10</top>
+				<width>700</width>
+				<height>40</height>
+				<label>音轨</label>
+				<font>font12_title</font>
+				<textcolor>grey</textcolor>
+				<align>center</align>
+			</control>
+
+			<!-- List -->
+			<control type="list" id="80001">
+				<left>10</left>
+				<top>60</top>
+				<width>740</width>
+				<height>250</height>
+				<onup>70049</onup>
+				<ondown>70049</ondown>
+				<onleft>70049</onleft>
+				<onright>70049</onright>
+				<viewtype label="list">list</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="50">
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>700</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>!String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>700</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FFEB9E17</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="50">
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>700</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>grey</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>!String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+					<control type="label">
+						<left>10</left>
+						<top>0</top>
+						<width>700</width>
+						<height>50</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FFEB9E17</textcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+						<visible>String.IsEqual(ListItem.Property(IsActive),true)</visible>
+					</control>
+				</focusedlayout>
 			</control>
 		</control>
 	</controls>
