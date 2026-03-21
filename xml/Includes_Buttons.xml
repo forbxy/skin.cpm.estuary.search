@@ -19,8 +19,16 @@
 		<radioposy>0</radioposy>
 	</include>
 	<include name="OSDSmallButton">
+		<param name="onup">auto</param>
+		<param name="ondown">auto</param>
+		<param name="onleft">auto</param>
+		<param name="onright">auto</param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[control_id]">
+				<onup condition="!String.IsEqual($PARAM[onup],auto)">$PARAM[onup]</onup>
+				<ondown condition="!String.IsEqual($PARAM[ondown],auto)">$PARAM[ondown]</ondown>
+				<onleft condition="!String.IsEqual($PARAM[onleft],auto)">$PARAM[onleft]</onleft>
+				<onright condition="!String.IsEqual($PARAM[onright],auto)">$PARAM[onright]</onright>
 				<textureradioonfocus colordiffuse="lightgreen">$PARAM[texture]</textureradioonfocus>
 				<textureradioonnofocus colordiffuse="lightgreen">$PARAM[texture]</textureradioonnofocus>
 				<textureradioofffocus colordiffuse="white">$PARAM[texture]</textureradioofffocus>
