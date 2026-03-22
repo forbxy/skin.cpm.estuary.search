@@ -956,6 +956,11 @@ msgid "Video source type"
 msgstr ""
 
 #: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31636"
+msgid "CPU per-core usage"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
 msgctxt "#32100"
 msgid "Display mode"
 msgstr ""
@@ -1048,4 +1053,129 @@ msgstr ""
 #: /xml/DialogPlayerProcessInfo.xml
 msgctxt "#31657"
 msgid "Subtitle name"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31660"
+msgid "Configuration"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31661"
+msgid "Version"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31662"
+msgid "Profile"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31663"
+msgid "Level"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31664"
+msgid "RPU"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31665"
+msgid "Base Layer"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31666"
+msgid "Enhancement Layer"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31667"
+msgid "Enhancement Layer Type"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31668"
+msgid "Metadata"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31669"
+msgid "Levels Metadata"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31670"
+msgid "L6 Max CLL/FALL"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31671"
+msgid "L6 Min/Max"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31672"
+msgid "Source Min/Max"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31673"
+msgid "L1 Min/Max/Avg"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31674"
+msgid "L5 Active Offsets"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31675"
+msgid "cd/m²"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31676"
+msgid "12-bit PQ"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31677"
+msgid "Static Metadata"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31678"
+msgid "Max CLL/FALL"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31679"
+msgid "Min/Max"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31680"
+msgid "Colour Primaries"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31681"
+msgid "L"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31682"
+msgid "R"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31683"
+msgid "T"
+msgstr ""
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31684"
+msgid "B"
 msgstr ""

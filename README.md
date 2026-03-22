@@ -1,28 +1,22 @@
 # Skin CPM Estuary Search
 
-本皮肤基于 CPM 的 Estuary Mod 进行修改，主要包含以下改进和调整：
+基于 [CPM Estuary Mod](https://github.com/cpm-code/cpm.Estuary) 修改的 Kodi 皮肤（原版 Estuary 作者 phil65）。
 
-## 依赖说明
+## 安装
 
-皮肤的筛选页面绑定和OSD菜单音轨和字幕的弹窗依赖于 **Filtered Movies** 插件，请确保安装：
-*   [plugin.video.filteredmovies](https://github.com/forbxy/plugin.video.filteredmovies)
+1. 安装 [forbxy 仓库](https://github.com/forbxy/repository.forbxy)
+2. Kodi → **设置 → 插件 → 从仓库安装 → forbxy Repository → 界面外观 → 皮肤** → 安装 **cpm.EstuarySearch**
 
-## 功能特性
+> 筛选功能和 OSD 音轨/字幕弹窗依赖 [plugin.video.filteredmovies](https://github.com/forbxy/plugin.video.filteredmovies)，请一并安装。
 
-1.  **快捷筛选**
-    *   绑定放大镜按钮，点击直接打开筛选页面。
+## 改动
 
-2.  **视觉优化**
-    *   将皮肤整体调整为半透明化效果，提升视觉通透感。
-    *   海报墙视图添加电影或剧集名称显示。
-
-3.  **OSD 播放菜单增强**
-    *   新增独立的音轨按钮。
-    *   **智能弹窗**：当音轨按钮或字幕按钮被聚焦时，自动弹出视图供快速选择字幕或音轨。
-    *   界面调整：将 VS10 按钮与其他按钮对齐，保持界面整洁。
-
-4.  **中文支持**
-    *   修改默认字体为 Arial，有效防止中文乱码问题。
+- **快捷筛选**：放大镜按钮一键打开筛选页面
+- **半透明界面**：整体视觉通透化
+- **海报墙标题**：海报墙视图显示影片名称
+- **OSD 增强**：独立音轨按钮、聚焦自动弹窗选择音轨/字幕、VS10 按钮对齐
+- **中文字体**：默认字体改为 Arial，防止中文乱码
+- **播放器信息页中文翻译**：DV/HDR 页面全部中文本地化（新增 25 条翻译）、尼特列右对齐、AML 硬解 FPS 布局优化、修复 RPU/BL/EL 指示符编码问题
 
 ## 预览
 

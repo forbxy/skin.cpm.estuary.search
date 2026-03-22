@@ -446,6 +446,11 @@ msgctxt "#31123"
 msgid "Same director"
 msgstr "同一导演"
 
+#: /xml/Variables.xml
+msgctxt "#31124"
+msgid "Player Process"
+msgstr "播放器进程信息"
+
 msgctxt "#31125"
 msgid "Press up for actor info"
 msgstr "按“上”为演员信息"
@@ -731,6 +736,261 @@ msgstr "媒体"
 msgctxt "#31611"
 msgid "System"
 msgstr "系统"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31630"
+msgid "System FPS"
+msgstr "系统帧率"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31631"
+msgid "CPU frequency"
+msgstr "CPU 频率"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31632"
+msgid "SoC temp"
+msgstr "SoC 温度"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31633"
+msgid "Video stream cache"
+msgstr "视频流缓存"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31634"
+msgid "Player"
+msgstr "播放器"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31635"
+msgid "Video source type"
+msgstr "视频源类型"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31636"
+msgid "CPU per-core usage"
+msgstr "CPU 各核心使用率"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31641"
+msgid "Kodi fps"
+msgstr "Kodi 帧率"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31642"
+msgid "Video decoder|deint"
+msgstr "视频解码器|类型"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31643"
+msgid "A|V bit rate Mbps"
+msgstr "音频|视频码率 Mbps"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31644"
+msgid "Cache"
+msgstr "缓存"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31645"
+msgid "Memory"
+msgstr "内存"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31646"
+msgid "CPU"
+msgstr "CPU 频率|温度"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31647"
+msgid "Video source type"
+msgstr "视频源类型"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31648"
+msgid "Video encoding"
+msgstr "视频编码"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31649"
+msgid "Video colour"
+msgstr "视频色彩"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31650"
+msgid "Audio encoding"
+msgstr "音频编码"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31651"
+msgid "Audio sampling"
+msgstr "音频采样"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31652"
+msgid "Audio language"
+msgstr "音频语言"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31653"
+msgid "Dolby Vision Profile"
+msgstr "杜比视界配置"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31654"
+msgid "VS10 mode"
+msgstr "VS10 模式"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31655"
+msgid "AML fps"
+msgstr "amlogic硬解帧率"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31656"
+msgid "Dolby Vision Metadata"
+msgstr "杜比视界元数据"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31657"
+msgid "Subtitle name"
+msgstr "字幕名称"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#32100"
+msgid "Display mode"
+msgstr "显示器模式"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#32101"
+msgid "EOTF & Gamut"
+msgstr "显示器EOTF和色域"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31660"
+msgid "Configuration"
+msgstr "配置"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31661"
+msgid "Version"
+msgstr "Version"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31662"
+msgid "Profile"
+msgstr "Profile"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31663"
+msgid "Level"
+msgstr "Level"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31664"
+msgid "RPU"
+msgstr "RPU"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31665"
+msgid "Base Layer"
+msgstr "基础层"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31666"
+msgid "Enhancement Layer"
+msgstr "增强层"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31667"
+msgid "Enhancement Layer Type"
+msgstr "增强层类型"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31668"
+msgid "Metadata"
+msgstr "元数据类型"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31669"
+msgid "Levels Metadata"
+msgstr "层级元数据"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31670"
+msgid "L6 Max CLL/FALL"
+msgstr "L6最大(像素/帧平均)"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31671"
+msgid "L6 Min/Max"
+msgstr "L6制片屏幕(最小/最大)"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31672"
+msgid "Source Min/Max"
+msgstr "视频源内容(最小/最大)"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31673"
+msgid "L1 Min/Max/Avg"
+msgstr "L1 当前最小/最大/平均"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31674"
+msgid "L5 Active Offsets"
+msgstr "L5 活动区域偏移"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31675"
+msgid "cd/m²"
+msgstr "尼特"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31676"
+msgid "12-bit PQ"
+msgstr "12-bit PQ"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31677"
+msgid "Static Metadata"
+msgstr "静态元数据"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31678"
+msgid "Max CLL/FALL"
+msgstr "最大亮度(像素/帧平均)"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31679"
+msgid "Min/Max"
+msgstr "制片屏幕最小/最大亮度"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31680"
+msgid "Colour Primaries"
+msgstr "制片屏幕色域"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31681"
+msgid "L"
+msgstr "L"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31682"
+msgid "R"
+msgstr "R"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31683"
+msgid "T"
+msgstr "T"
+
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31684"
+msgid "B"
+msgstr "B"
 
 #~ msgctxt "#31615"
 #~ msgid "Extras"

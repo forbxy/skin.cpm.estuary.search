@@ -154,7 +154,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR blue]Configuration[/COLOR]</label>
+						<label>[COLOR blue]$LOCALIZE[31660][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -167,7 +167,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Version:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31661]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -190,7 +190,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Profile:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31662]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -225,7 +225,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Level:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31663]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -248,7 +248,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]RPU:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31664]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -259,7 +259,7 @@
 						<aligny>bottom</aligny>
 						<align>right</align>
 						<label>$VAR[RPUPresentVar]</label>
-						<font>font40</font>
+						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
 				</control>
@@ -271,7 +271,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Base Layer:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31665]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -282,7 +282,7 @@
 						<aligny>bottom</aligny>
 						<align>right</align>
 						<label>[COLOR lightgreen]$VAR[BLPresentVar][/COLOR]</label>
-						<font>font40</font>
+						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
 				</control>
@@ -294,7 +294,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Enhancement Layer:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31666]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -305,7 +305,7 @@
 						<aligny>bottom</aligny>
 						<align>right</align>
 						<label>$VAR[ELPresentVar]</label>
-						<font>font40</font>
+						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="label">
@@ -315,7 +315,7 @@
 						<aligny>bottom</aligny>
 						<align>right</align>
 						<label>$VAR[ELSourcePresentVar]</label>
-						<font>font40</font>
+						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 						<visible>!String.IsEqual(Player.Process(video.source.dovi.el.present),Player.Process(video.dovi.el.present))</visible>
 						<visible>!String.IsEqual(Player.Process(video.source.dovi.profile),0)</visible>
@@ -329,7 +329,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Enhancement Layer Type:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31667]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -364,7 +364,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Metadata:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31668]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -402,7 +402,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR blue]Levels Metadata[/COLOR]</label>
+						<label>[COLOR blue]$LOCALIZE[31669][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -416,7 +416,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]L6 Max CLL/FALL:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31670]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -445,8 +445,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -460,7 +460,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]L6 Min/Max:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31671]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -489,8 +489,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -503,7 +503,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Source Min/Max:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31672]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -532,8 +532,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -546,7 +546,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]L1 Min/Max/Avg:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31673]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -585,8 +585,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -608,7 +608,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Source Min/Max:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31672]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -638,7 +638,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR dimgrey]12-bit PQ[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31676][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -651,7 +651,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]L1 Min/Max/Avg:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31673]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -691,7 +691,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR dimgrey]12-bit PQ[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31676][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -714,7 +714,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]L5 Active Offsets:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31674]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -734,7 +734,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>right</align>
-						<label>[COLOR dimgrey]L[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31681][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -754,7 +754,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>right</align>
-						<label>[COLOR dimgrey]R[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31682][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -774,7 +774,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>right</align>
-						<label>[COLOR dimgrey]T[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31683][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -794,7 +794,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>right</align>
-						<label>[COLOR dimgrey]B[/COLOR]</label>
+						<label>[COLOR dimgrey]$LOCALIZE[31684][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -822,7 +822,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR blue]Static Metadata[/COLOR]</label>
+						<label>[COLOR blue]$LOCALIZE[31677][/COLOR]</label>
 						<font>font12</font>
 					</control>
 				</control>
@@ -835,7 +835,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Max CLL/FALL:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31678]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -864,8 +864,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -879,7 +879,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Min/Max:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31679]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -908,8 +908,8 @@
 						<width>100</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
-						<align>left</align>
-						<label>[COLOR dimgrey]cd/m²[/COLOR]</label>
+						<align>right</align>
+						<label>[COLOR dimgrey]$LOCALIZE[31675][/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -923,7 +923,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]Colour Primaries:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31680]:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -1130,7 +1130,7 @@
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
-						<label>[COLOR button_focus]$LOCALIZE[31646] %:[/COLOR]</label>
+						<label>[COLOR button_focus]$LOCALIZE[31636] %:[/COLOR]</label>
 						<font>font12</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
@@ -1625,7 +1625,7 @@
 					<visible>Player.HasVideo</visible>
 					<visible>Player.Process(videohwdecoder)</visible>
 					<control type="label">
-						<width>160</width>
+						<width>210</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
@@ -1634,8 +1634,8 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="label">
-						<left>212</left>
-						<width>308</width>
+						<left>210</left>
+						<width>310</width>
 						<height>40</height>
 						<aligny>bottom</aligny>
 						<align>left</align>
