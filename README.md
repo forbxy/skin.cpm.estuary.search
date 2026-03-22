@@ -5,9 +5,7 @@
 ## 安装
 
 1. 安装 [forbxy 仓库](https://github.com/forbxy/repository.forbxy)
-2. Kodi → **设置 → 插件 → 从仓库安装 → forbxy Repository → 界面外观 → 皮肤** → 安装 **cpm.EstuarySearch**
-
-> 筛选功能和 OSD 音轨/字幕弹窗依赖 [plugin.video.filteredmovies](https://github.com/forbxy/plugin.video.filteredmovies)，请一并安装。
+2. Kodi → **设置 → 插件 → 从库安装 → forbxy Add-on repository → 界面外观 → 皮肤** → 安装 **cpm.EstuarySearch**
 
 ## 改动
 
