@@ -2,7 +2,7 @@ import os
 import sys
 import shutil
 
-REMOTE=False
+REMOTE=True
 def main():
     addon_id = "skin.cpm.estuary.search"
     script_dir = os.path.dirname(os.path.abspath(__file__))
