@@ -81,9 +81,10 @@
 	</variable>
 	<variable name="ListLabelVar">
 		<value condition="ListItem.HasVideoVersions + Window.IsActive(videoplaylist)">$INFO[ListItem.Label]$INFO[ListItem.VideoVersionName, [I](,)[/I]]</value>
-		<value condition="String.IsEqual(ListItem.DbType,episode) + Window.IsActive(videoplaylist)">$INFO[ListItem.TVShowtitle,,: ]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title]</value>
+		<value condition="String.IsEqual(ListItem.DbType,episode) + Window.IsActive(videoplaylist)">$INFO[ListItem.TVShowtitle,,: ]$VAR[PaddedSeasonEpisodeLabel]$INFO[ListItem.Title,. ]</value>
 		<value condition="String.IsEqual(ListItem.DbType,musicvideo) + Window.IsActive(videoplaylist)">$INFO[ListItem.Artist,, - ]$INFO[ListItem.Title]</value>
 		<value condition="[!String.IsEmpty(ListItem.Season) | !String.IsEmpty(ListItem.Episode) | !String.IsEmpty(ListItem.EpisodeName)] + Window.IsActive(videoplaylist)">$INFO[ListItem.Title,,: ]$VAR[SeasonEpisodeLabel]$INFO[ListItem.EpisodeName]</value>
+		<value condition="String.IsEqual(ListItem.DbType,episode)">$VAR[PaddedSeasonEpisodeLabel]$INFO[ListItem.Title,. ]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="ListLabel2Var">
@@ -391,7 +392,7 @@
 		<value>$LOCALIZE[208]</value>
 	</variable>
 	<variable name="VideoInfoSubLabelVar">
-		<value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.Season]$INFO[ListItem.Episode,[COLOR grey]x[/COLOR],: ]$INFO[ListItem.Title]</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode)">$VAR[PaddedSeasonEpisodeLabel]$INFO[ListItem.Title,: ]</value>
 		<value condition="String.IsEqual(ListItem.DBType,season)">$INFO[ListItem.Label]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Tagline,[I],[/I]]</value>
 		<value>$INFO[ListItem.Genre]</value>
@@ -612,9 +613,15 @@
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 		<value condition="ListItem.IsPlayable">icons/pvr/PVR-HasArchive.png</value>
 	</variable>
+	<variable name="PaddedSeasonEpisodeLabel">
+		<value condition="Integer.IsLess(ListItem.Season,10) + Integer.IsLess(ListItem.Episode,10)">$INFO[ListItem.Season,S0]$INFO[ListItem.Episode,E0]</value>
+		<value condition="Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Season,S0]$INFO[ListItem.Episode,E]</value>
+		<value condition="Integer.IsLess(ListItem.Episode,10)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E0]</value>
+		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
+	</variable>
 	<variable name="SeasonEpisodeLabel">
-		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
-		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]</value>
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$VAR[PaddedSeasonEpisodeLabel]</value>
+		<value>$VAR[PaddedSeasonEpisodeLabel]: </value>
 	</variable>
 	<variable name="FirstAiredLabel">
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$LOCALIZE[20473]</value>
